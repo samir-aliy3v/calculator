@@ -1,0 +1,72 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Century Gothic',sans-serif;
+}
+
+/* Arxaplan */
+
+body{
+	background: linear-gradient(to left, #1d4350, #a43931) !important;
+}
+
+/* Kalkulyator konteyneri */
+
+.calculator{
+	display:grid;
+	justify-content: center;
+	align-content:center;
+	min-height:100vh;
+	grid-template-columns: repeat(4, 90px);
+	grid-template-rows: minmax(120px,auto) repeat(5,90px);
+}
+
+/* Output ekranı */
+
+#output-screen{
+	grid-column:1 / -1;
+	background-color:#171a1f;
+	color:white;
+	font-size:1.5rem;
+	display:flex;
+	align-items:flex-end;
+	justify-content:space-around;
+	flex-direction: column;
+	padding:10px;
+	word-wrap:break-word;
+	word-break: break-all;
+	outline:none;
+	border:none;
+}
+
+
+/* Butonlar */
+
+button{
+	font-size:2rem;
+	border:1px solid white;
+	transition:0.2s;
+}
+
+.allClear, .del{background:#8fcf72;}
+
+.numbers{background:#a7beae;}
+
+.operators{background-color:#ddc3a5;}
+
+.equal{background-color:#e0a96d;}
+
+.allClear, .equal{grid-column: span 2;}
+
+
+/* Butonlar üçün hover effektləri */
+
+.allClear:hover{background:#6DAC4FFF;}
+
+.del:hover{background:#6dac4fff;}
+
+.numbers:hover{background:#859e8d;}
+
+.operators:hover{background-color:#b3804b;}
+
+.equal:hover{background:#b3804b;}
